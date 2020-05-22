@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link  rel="icon"   href="./assets/img/image.jpg" type="image/jpg" />
-    <script src="/__/firebase/7.14.4/firebase-app.js"></script>
-    <script src="/__/firebase/7.14.4/firebase-auth.js"></script>
-    <script src="/__/firebase/7.14.4/firebase-firestore.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
     <script>
         // Your web app's Firebase configuration
         var firebaseConfig = {
@@ -28,13 +28,10 @@
 <body>
     <div class="container">
         <nav class="navigation">
-            <span class="title" id="user">Chat</span>
-            <div id="button" class="buttons">
-                <button class="buttons-one size">Acceder</button>
-                <button class="buttons-two size">Cerrar sesion</button>
-            </div>
+            <span class="title" id="nameUser">Chat</span>
+            <div id="buttons"></div>
         </nav>
     </div>
-    <script src="app.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
