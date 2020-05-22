@@ -18,18 +18,14 @@ html{
 }
 
 
-.container{
+.navigation{
     background-color:var(--color-turquoise);
     width:100vw;
     margin:0 auto;
     height:6em;
-
-}
-
-
-.navigation{
     display:flex;
     flex-direction:column;
+
 }
 
 .title{
@@ -53,6 +49,7 @@ html{
     border:3px solid blueviolet;
 }
 
+
 .buttons-one:hover{
     background-color:red;
 }
@@ -61,3 +58,8 @@ html{
     background-color: blueviolet;
 }
 
+.form{ 
+    background-color: var(--color-turquoise);
+    position:fixed;
+    top:100px;
+}
