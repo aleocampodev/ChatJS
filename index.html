@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
     <link  rel="icon"   href="./assets/img/image.jpg" type="image/jpg" />
     <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
@@ -26,16 +26,22 @@
     <title>Chat JavaScript</title>
 </head>
 <body>
-    <div class="container">
+    <div  id="container">  
         <nav class="navigation">
-            <span class="title" id="nameUser">Chat</span>
-            <div id="buttons"></div>
+            <div class="navigation-main">
+                <span class="title" id="nameUser">Chat</span>
+                <div id="buttons"></div>
+                <div id="text"></div>
+            </div>
         </nav>
 
+        <main id="protectContent" class="protect">
+        </main>
+
         <form class="form" id="form">
-            <input placeholder="Enviar mensaje" id="inputChat">
+            <input placeholder="Enviar mensaje" id="inputChat" class="inputChat">
             <div>
-                <button type="submit">Enviar</button>
+                <button type="submit" class="submit">Enviar</button>
             </div>
         </form>
     </div>
