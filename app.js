@@ -18,7 +18,6 @@ firebase.auth().onAuthStateChanged( user => {
         console.log(user);
         buttons.innerHTML= buttonOne;
 
-        
         nameUser.innerHTML= ` <p class="text2">Bienvenido, ${user.displayName} </p>`
         
         closeSesion()
@@ -27,16 +26,11 @@ firebase.auth().onAuthStateChanged( user => {
 
         contentChat(user)
 
-       content.classList.remove('main-content');
+        content.classList.remove('main-content');
         navigation.classList.remove('navigation1');
         navigationMain.classList.remove('navigation-main1');
         navigation.classList.toggle('navigation2');
         text.innerHTML = '';
-        
-
-       
-        
-
     }else{
         console.log('no existe user');
         buttons.innerHTML = buttonTwo;
@@ -46,16 +40,10 @@ firebase.auth().onAuthStateChanged( user => {
 
         form.style.display='none';
         content.classList.toggle('main-content');
-        text.innerHTML= `
-            <p class="text-main">Debes iniciar sesión</p>
-        `
+        text.innerHTML= `<p class="text-main">Debes iniciar sesión</p>`
         navigation.classList.toggle('navigation1')
         navigationMain.classList.toggle('navigation-main1')
         navigation.classList.remove('navigation2')
-        
-        
-    
-
     }
 });
 
@@ -82,7 +70,6 @@ const closeSesion = () => {
 }
 
 const contentChat = (user) => {
-
     /*-protectContent.innerHTML= ` 
     <span class="main1">Mensaje del usuario</span>
     <span class="main2">Mensaje entrante</span>
@@ -121,9 +108,7 @@ const contentChat = (user) => {
                 </div>
                 `
             }else{
-                protectContent.innerHTML += `
-                    <span class="main2">${doc.data().texto}</span> 
-                `
+                protectContent.innerHTML += `<span class="main2">${doc.data().texto}</span> `
             }
 
             protectContent.scrollTop = protectContent.scrollHeight
